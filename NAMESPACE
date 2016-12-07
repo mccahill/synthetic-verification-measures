@@ -1,0 +1,8 @@
+#exportPattern("^[[:alpha:]]+")
+importFrom(Rcpp, evalCpp)
+importFrom(Matrix, bdiag)
+importFrom(smoothmest,rdoublex)
+useDynLib(VerificationMeasures)
+
+export(PriROC)
+export(PriRP)

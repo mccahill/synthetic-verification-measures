@@ -1,0 +1,15 @@
+Package: VerificationMeasures
+Type: Package
+Title: Differentially Private Regression Diagnostics
+Version: 0.1
+Date: 2016-04-05
+Author: Quanli Wang, Jerry Reiter, Yan Chen and Ashwin Machanavajjhala
+Maintainer: Quanli Wang <quanli@stat.duke.edu>
+Description: This library implements the methods described in "Differentially Private Regression Diagnostics". It creates differentially private versions of residual plots for linear regression and of receiver operating characteristic (ROC) curves for logistic regression. The former helps determine whether or not the data satisfy the assumptions underlying the linear regression model, and the latter is used to assess the predictive power of the logistic regression model. Empirical studies show that these algorithms are adequate for diagnosing the fit and predictive power of regression models as long as the size of the dataset times the privacy parameter epsilon is not less than 1000.
+License: GPL(>=3)
+LazyData: TRUE
+Imports: Rcpp (>= 0.12.0), smoothmest, Matrix
+LinkingTo: Rcpp
+RoxygenNote: 5.0.1
+NeedsCompilation: yes
+Packaged: 2016-04-14 17:50:45 UTC; qw2192
